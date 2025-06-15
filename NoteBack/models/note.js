@@ -1,5 +1,7 @@
 // mangoDB
 const url = process.env.MONGODB_URI
+const mongoose = require('mongoose')
+
 console.log('connecting to ', url)
 mongoose.connect(url)
   .then(res => {
